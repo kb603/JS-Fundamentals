@@ -44,8 +44,8 @@ console.log(population);
 // Test data:
 // Data 1: Mark weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 // Data 2: Mark weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
-
 // let BMI = mass / height ** 2
+
 
 let markMass = 78;
 let markHeight = 1.69;
@@ -58,6 +58,51 @@ let johnBMI = johnMass / johnHeight **2;
 
 const markHigherBMI = markBMI > johnBMI;
 
-console.log(markBMI);
-console.log(johnBMI);
+if (markBMI > johnBMI) {
+    console.log("Mark's BMI is higher than John's!")
+} else {
+  console.log("John's BMI is higher than Mark's!")  
+}
+
 console.log(markHigherBMI);
+console.log(`Mark's BMI is ${markBMI}`);
+console.log(`John's BMI is ${johnBMI}`);
+
+
+
+// const firstName = "Kojo";
+// const job = "student";
+// const birthYear = "2004";
+// const year = 2024;
+
+// const kojo = "I'm " + firstName + " a " + (year - birthYear) + " year old " + job;
+// console.log(kojo);
+
+// const kojo2 = "I'm " + `${firstName}` + " a " + `${(year - birthYear)}` + " year old " + `${job}`;
+// console.log(kojo2)
+
+
+/*
+const age = 16;
+const isOldEnough = age >= 18;
+const yearsLeft = 18 - age;
+
+if (isOldEnough) {
+    console.log("Sarah can start driving 🚗");
+} else {
+   
+    console.log(`Sarah has ${yearsLeft}, years left to drive`);
+}
+
+const birthYear = 1991;
+let century;
+
+if (birthYear <= 2000) {
+     century  = 20; 
+} else {
+     century = 21;
+}
+
+console.log(century);
+
+*/
