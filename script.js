@@ -115,3 +115,6 @@ console.log(Number(inputYear) + 18);
 
 const favorite = Number(prompt("What is your favorite number"));
 console.log(favorite)
+
+
+//
