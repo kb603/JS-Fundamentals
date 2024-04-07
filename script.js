@@ -107,6 +107,7 @@ console.log(century);
 
 */
 
+/*
 // Type Conversion
 const inputYear = "1991";
 console.log(Number(inputYear));
@@ -116,5 +117,94 @@ console.log(Number(inputYear) + 18);
 const favorite = Number(prompt("What is your favorite number"));
 console.log(favorite)
 
+*/
 
-//
+
+/*
+const hasDriversLicense = true;
+const hasGoodVision =true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//     console.log("Sarah can drive");
+// } else {
+//     console.log("Someone else has to drive");
+// }
+
+const isTired = true;
+console.log(hasDriversLicense && hasGoodVision && !isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log("Sarah can drive");
+} else {
+    console.log("Someone else has to drive");
+}
+
+*/
+
+// Challenge 3
+
+// Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+
+// const dolphinsScore1 = 96;
+// const dolphinsScore2 = 108;
+// const dolphinsScore3 = 89;
+
+// const koalasScore1 = 88;
+// const koalasScore2 = 91;
+// const koalasScore3 = 110;
+
+// const dolphinsAverageScore = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+// console.log(`Dolphins average score is ${dolphinsAverageScore}`);
+
+// const koalasAverageScore = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+// console.log(`Koalas average score is ${koalasAverageScore}`);
+
+// if (dolphinsAverageScore > koalasAverageScore) {
+//     console.log("Dolphins won the competition")
+// } else (dolphinsAverageScore === koalasAverageScore);{
+//     console.log("The competition was a tie")
+// }
+
+// const scoreRequirement = 100;
+// if (dolphinsAverageScore > koalasAverageScore && scoreRequirement) {
+//     console.log();
+// }
+
+// Jonas Answer
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 100 + 110) / 3;
+
+// console.log(`Dolphins score: ${scoreDolphins}`);
+// console.log(`Koalas score: ${scoreKoalas}`);
+
+// if (scoreDolphins > scoreKoalas) {
+//     console.log("Dolphins won the match")
+// } else if (scoreKoalas > scoreDolphins) {
+//     console.log("Koalas won the match")
+// } else if (scoreDolphins === scoreKoalas) {
+//     console.log("The match is a tie")
+// }
+
+//BONUS 1 
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+//const minScore = 100;
+
+console.log(`Dolphins score: ${scoreDolphins}`);
+console.log(`Koalas score: ${scoreKoalas}`);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+    console.log("Dolphins wind the match")
+} else if (scoreKoalas > scoreDolphins && scoreDolphins >=100) {
+    console.log("Koalas win the match")
+} else if(scoreKoalas === scoreDolphins && scoreDolphins >= 100 && scoreKoalas >= 100){
+    console.log("The match is a tie")
+} else {
+    console.log("No one wins")
+}
