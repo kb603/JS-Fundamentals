@@ -46,7 +46,7 @@ console.log(population);
 // Data 2: Mark weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 // let BMI = mass / height ** 2
 
-
+/*
 let markMass = 78;
 let markHeight = 1.69;
 
@@ -68,7 +68,7 @@ console.log(markHigherBMI);
 console.log(`Mark's BMI is ${markBMI}`);
 console.log(`John's BMI is ${johnBMI}`);
 
-
+*/
 
 // const firstName = "Kojo";
 // const job = "student";
@@ -106,3 +106,12 @@ if (birthYear <= 2000) {
 console.log(century);
 
 */
+
+// Type Conversion
+const inputYear = "1991";
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
+
+
+const favorite = Number(prompt("What is your favorite number"));
+console.log(favorite)
