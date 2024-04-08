@@ -190,6 +190,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 //     console.log("The match is a tie")
 // }
 
+/*
 //BONUS 1 
 const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoalas = (88 + 91 + 110) / 3;
@@ -207,4 +208,15 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
     console.log("The match is a tie")
 } else {
     console.log("No one wins")
+}
+
+*/
+
+const day = "Monday";
+
+switch(day) {
+    case "Monday":
+        console.log("Plan course structure");
+        console.log("Go to coding meetup");
+        break;
 }
