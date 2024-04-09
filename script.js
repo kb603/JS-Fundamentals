@@ -212,6 +212,7 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 
 */
 
+/*
 const day = "Monday";
 
 switch(day) {
@@ -219,4 +220,24 @@ switch(day) {
         console.log("Plan course structure");
         console.log("Go to coding meetup");
         break;
+    case "Tuesday":
+        console.log("Prepare theory videos");
+        break;
+    case "Friday":
+        console.log("Record videos");
+    default:
+        console.log("Not a valid day");
 }
+
+if (day === "monday") {
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+} else if (day === "Tuesday") {
+    console.log("Prepare theory videos");
+} else if (day === "Friday") {
+    console.log("Record videos");
+} else {
+    console.log("Invalid day")
+}
+
+*/
