@@ -1,1 +1,19 @@
-const hello = 1;
+"use strict"; 
+
+function logger() {
+    console.log("My name is Kojo");
+}
+
+//calling / running / invoking a function
+logger();
+
+function fruitProcessor(apples, oranges) {
+    const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 3);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor (2, 3);
+console.log(appleOrangeJuice);
