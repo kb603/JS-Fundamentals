@@ -241,3 +241,17 @@ if (day === "monday") {
 }
 
 */
+
+/*
+const age = 23;
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+if (age >= 18) {
+    console.log("wine");
+} else {
+    console.log("water");
+}
+
+*/
