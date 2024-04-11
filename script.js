@@ -255,3 +255,15 @@ if (age >= 18) {
 }
 
 */
+
+// challenge 4
+// Test data:
+//  1: Test for bill values 275, 40 and 430 Hints:
+// To calculate 20% of a value, simply multiply it by 20/100 = 0.2 § Value X is between 50 and 300, if it's >= 50 && <= 300
+// 2. Print a string to theconsole containing thebill value,the tip,and the final value (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 316.25”
+
+const bill_value = 275;
+
+const tip = bill_value >= 50 && bill_value <= 300 ? bill_value * 0.15 : bill_value * 0.20;
+
+console.log(`The bill was ${bill_value}, the tip was ${tip}, and the total value ${bill_value + tip}`)
