@@ -137,3 +137,27 @@ const checkWinner = function(dolphinsAverageScore, koalasAverageScore) {
 }
 checkWinner(dolphinsAverageScore, koalasAverageScore);
 */
+
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+
+const calcAge = function(birthYear) {
+    return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[2]);
+console.log(age1, age2, age3);
+
