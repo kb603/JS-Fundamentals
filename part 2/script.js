@@ -138,6 +138,7 @@ const checkWinner = function(dolphinsAverageScore, koalasAverageScore) {
 checkWinner(dolphinsAverageScore, koalasAverageScore);
 */
 
+/*
 const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";
@@ -160,4 +161,42 @@ const age1 = calcAge(years[0]);
 const age2 = calcAge(years[1]);
 const age3 = calcAge(years[2]);
 console.log(age1, age2, age3);
+
+*/
+
+/*
+const friends = ["Michael", "Steven", "Peter"];
+
+//Add Elements
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John");
+console.log(friends);
+
+//Remove Elements
+friends.pop()
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends)
+
+console.log(friends.indexOf("Michael"))
+
+console.log(friends.includes("Steven"))
+
+*/
+
+const calcTip = function(bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0], calcTip(bills[1]), calcTip(bills[2]))];
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + bills[2]];
+
+console.log(bills, tips, totals)
 
