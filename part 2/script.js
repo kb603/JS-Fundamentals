@@ -190,12 +190,101 @@ console.log(friends.includes("Steven"))
 
 */
 
+/*
 const calcTip = function(bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
 const bills = [125, 555, 44];
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const tips = [calcTip(bills[0]) , calcTip(bills[1]), calcTip(bills[2])];
 
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + bills[2]];
 
 console.log(bills, tips, totals)
+
+*/
+
+/*
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Mann",
+    age: 28,
+    job: "teacher",
+    friends: ["Michael", "Steven", "Peter"],
+}
+
+console.log(jonas.lastName);
+console.log(jonas["lastName"])
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+const interestedIn = prompt("What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends");
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn])
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age, job and friends")
+}
+
+jonas.location = "Portugal";
+jonas["twitter"] = "@twitter2"
+console.log(jonas);
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`)
+
+*/
+
+
+// 3. Log to the console who has the higher BMI,together with thefull name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+
+/*
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function() {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi
+    }
+}
+
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi
+    }
+}
+
+mark.calcBMI()
+john.calcBMI()
+console.log(mark.calcBMI());
+console.log(john.calcBMI());
+
+if (mark.calcBMI > john.calcBMI) {
+    console.log("Mark BMI");
+} else {
+    console.log("John bmi");
+}
+
+*/
+
+// for (let rep =1; rep <= 10; rep ++) {
+//     console.log(`Lifting weight repitition ${rep} 🏋🏾‍♂️`)
+// }
+
+// const jonas = [
+//     "Jonas",
+//     "Mann",
+//     28,
+//     "teacher",
+//     ["Michael", "Steven", "Peter"],
+// ]
+
+// for (let i = 0; i < jonas.length; i++){
+//     console.log(jonas[i])
+// }
+
