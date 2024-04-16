@@ -276,15 +276,30 @@ if (mark.calcBMI > john.calcBMI) {
 //     console.log(`Lifting weight repitition ${rep} 🏋🏾‍♂️`)
 // }
 
-// const jonas = [
-//     "Jonas",
-//     "Mann",
-//     28,
-//     "teacher",
-//     ["Michael", "Steven", "Peter"],
-// ]
+const jonas = [
+    "Jonas",
+    "Mann",
+    28,
+    "teacher",
+    ["Michael", "Steven", "Peter"],
+]
 
 // for (let i = 0; i < jonas.length; i++){
 //     console.log(jonas[i])
 // }
 
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i])
+}
+
+console.log(ages);
+
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] !== 'string') continue;
+    console.log(jonas[i], typeof[i]);
+}
