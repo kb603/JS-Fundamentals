@@ -289,17 +289,52 @@ const jonas = [
 // }
 
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
 
-for (let i = 0; i < years.length; i++) {
-    ages.push(2037 - years[i])
-}
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i])
+// }
 
-console.log(ages);
+// console.log(ages);
 
-console.log("--- ONLY STRINGS ---");
-for (let i = 0; i < jonas.length; i++) {
-    if (typeof jonas[i] !== 'string') continue;
-    console.log(jonas[i], typeof[i]);
+// console.log("--- ONLY STRINGS ---");
+// for (let i = 0; i < jonas.length; i++) {
+//     if (typeof jonas[i] !== 'string') continue;
+//     console.log(jonas[i], typeof[i]);
+// }
+
+// console.log(jonas.length);
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//     console.log(jonas[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`-------Starting exercise ${exercise}`);
+
+//     for (let rep = 1; rep < 6; rep++) {
+//     console.log(`Lifting weight repition ${rep} 🏋🏾‍♂️`)
+//     }
+// }
+
+
+// for (let rep = 1; rep <= 10; rep ++) {
+//     console.log(`Lifting weight repitition ${rep} 🏋🏾‍♂️`)
+// }
+
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`Lifting weights repitition ${rep}🏋🏾‍♂️`);
+//     rep++
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !==6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log("You rolled a 6")
+    }
 }
