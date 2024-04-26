@@ -34,8 +34,60 @@ const restaurant = {
       `Order received for ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]}, would be delivered to ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your deleicious pasta with ${ing1},  ${ing2},  ${ing3}`
+    );
+  },
 };
 
+// SPREAD OPERATOR
+/*
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+const newMenu = [...restaurant.mainMenu, "Gnocci"];
+console.log(newMenu);
+
+// Copy Array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+// Joining two arrays
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+const str = "Kojo";
+const letters = [...str, " ", "s"];
+console.log(letters);
+console.log(...str);
+
+// Real World Example
+
+const ingredients = [
+  //prompt("Let's make pasta! Ingredient 1?"),
+  //prompt("Let's make pasta! Ingredient 2?"),
+  //prompt("Let's make pasta! Ingredient 3?"),
+];
+console.log(ingredients);
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+restaurant.orderPasta(...ingredients);
+
+// Objects
+const newRestaurant = { founder: "Juan Pablo", foundedIn: 1988, ...restaurant };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = "Roma";
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
+*/
+/*
+Destructiong Arrays
 restaurant.orderDelivery({
   time: "22:30",
   address: "Via del Sole, 21",
@@ -104,3 +156,5 @@ console.log(open, close);
 // //Default Values
 // const [p = 1, q = 1, r = 1] = [8, 9];
 //console.log(p, q, r);
+
+*/
