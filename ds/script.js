@@ -46,6 +46,10 @@ const restaurant = {
   },
 };
 
+/*
+// REST Pattern and Parameters
+// Destructuring
+
 // SPREAD,because on the RIGHT side of =
 const arr = [1, 2, ...[3, 4]];
 
@@ -79,6 +83,7 @@ const x = [23, 5, 7];
 add(...x);
 
 restaurant.orderPizza("tomatoes", "peproni", "sausage", "hot sauce");
+*/
 /*
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
