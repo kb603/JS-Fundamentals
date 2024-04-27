@@ -45,7 +45,30 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+restaurant.numGuests = 23;
+const guest1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guest1);
 
+const guest2 = restaurant.numGuests || 10;
+console.log(guest2);
+
+/*
+////////////////////////////////////
+// Short Circuiting (&& and ||)
+console.log("----- OR ------");
+
+// Use ANY data type return ANY data type,
+console.log(3 || "Kojo");
+console.log("empty string " || "Kojo");
+console.log(true || 0);
+console.log("----- AND ------");
+console.log("hello" && 1 && "hello");
+
+// Practical Example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
+}
+*/
 /*
 // REST Pattern and Parameters
 // Destructuring
