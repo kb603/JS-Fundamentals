@@ -45,13 +45,74 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
-restaurant.numGuests = 23;
-const guest1 = restaurant.numGuests ? restaurant.numGuests : 10;
-console.log(guest1);
 
-const guest2 = restaurant.numGuests || 10;
-console.log(guest2);
+const airline = "Tap Portugal";
+const plane = "A320";
+/*
+if (restaurant.openingHours.mon) console.log(restaurant.openingHours.mon);
 
+if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri);
+// Optional Chaining
+
+console.log(restaurant.openingHours.mon?.open);
+
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? "closed";
+  console.log(`On ${day}, we open at ${open}`);
+}
+*/
+/*
+// for of loop
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+for (const item of menu) console.log(item);
+
+for (const [item, element] of menu.entries()) {
+  console.log(`${item + 1}: ${element}`);
+}
+*/
+/*
+const rest1 = {
+  name: "Capri",
+  numGuests: 20,
+};
+
+const rest2 = {
+  name: "La Pizza",
+  owner: "Giovanni Rossa",
+};
+// OR Assignment Operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// NULLISH assignment operator (null or undefined)
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// AND assignment operator
+// rest1.owner = rest1.owner && "<ANONYNMOUS>";
+// rest2.owner = rest2.owner && "<ANONYNMOUS>";
+
+rest1.owner &&= "<ANOYNMOUS>";
+rest2.owner &&= "<ANOYNMOUS>";
+
+console.log(rest1);
+console.log(rest2);
+*/
+/*
+// NULLISH OPERATOR
+// Nullish: Null and undefined (NOT 0 or "")
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+/*
 /*
 ////////////////////////////////////
 // Short Circuiting (&& and ||)
@@ -221,4 +282,83 @@ console.log(open, close);
 // const [p = 1, q = 1, r = 1] = [8, 9];
 //console.log(p, q, r);
 
+*/
+
+/*
+// CHALLENGE
+
+const game = {
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4:0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+// 1.
+const [players1, players2] = game.players;
+console.log(players1, players2);
+
+// 2.
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers);
+
+// 3.
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+
+//4.
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+console.log(players1Final);
+
+// 5.
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(team1, draw, team2);
+
+// 6.
+const printGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+};
+
+//printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+printGoals(...game.scored);
+
+// 7.
+team1 < team2 && console.log("Team 1 is more likely to win");
+team1 > team2 && console.log("Team 2 is more likely to win");
 */
