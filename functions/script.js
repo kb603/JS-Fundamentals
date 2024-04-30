@@ -88,6 +88,7 @@ const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 greetArr("hi")("kojo ");
 */
 
+/*
 const lufthansa = {
   airline: "Lufthansa",
   iataCode: "LH",
@@ -128,6 +129,94 @@ book.call(swiss, 583, "Mary Cooper");
 console.log(swiss);
 
 // Apply Method
+const sarahData = [23, "Sarah Williams"];
+book.apply(eurowings, sarahData);
+
 const flightData = [583, "George Cooper"];
 book.apply(swiss, flightData);
 console.log(flightData);
+
+// Bind
+const bookLU = book.bind(lufthansa);
+const bookEW = book.bind(eurowings);
+const bookSW = book.bind(swiss);
+
+bookEW(23, "Steven Williams");
+
+const bookEW23 = book.bind(eurowings, 23);
+bookEW23("lala");
+bookEW23("Tee");
+
+// With event listeners
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+lufthansa.buyPlane();
+
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+
+// Partial Application
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+//addVAT = value => value + value * 0.23;
+
+console.log(addVAT(150));
+console.log(addVAT(230));
+
+const addTaxRate = function (rate) {
+  return function (value) {
+    return value + value * rate;
+  };
+};
+
+const addVAT2 = addTaxRate(0.23);
+console.log(addVAT(150));
+console.log(addVAT(230));
+*/
+
+/*
+// Challenge
+const poll = {
+  question: "What is your favourite programming language?",
+  options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
+  // This generates [0, 0, 0, 0]. More in the next section!
+  answers: new Array(4).fill(0),
+  registerNewAnswer() {
+    // Getting input from user
+    const answer = Number(
+      prompt(
+        `${this.question}\n ${this.options.join("\n")} \n(Write option number)`
+      )
+    );
+    console.log(answer);
+    // Register answer
+    typeof answer === "number" &&
+      answer < this.answers.length &&
+      this.answers[answer]++;
+
+    this.displayResults();
+    this.displayResults("string");
+  },
+  displayResults(type = "array") {
+    if (type === "array") {
+      console.log(this.answers);
+    } else if (type === "string") {
+      console.log(`Poll results are ${this.answers.join(", ")}`);
+    }
+  },
+};
+//poll.registerNewAnswer();
+
+document
+  .querySelector(".poll")
+  .addEventListener("click", poll.registerNewAnswer.bind(poll));
+
+*/
