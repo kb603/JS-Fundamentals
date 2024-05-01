@@ -61,6 +61,7 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
+const displayTransactions = function (transactions) {};
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -141,6 +142,7 @@ movements.forEach(function (movement, i, arr) {
 });
 */
 
+/*
 // MAP
 const currencies = new Map([
   ["USD", "United States dollar"],
@@ -159,3 +161,4 @@ console.log(currencies);
 currenciesUnique.forEach(function (value, _, map) {
   console.log();
 });
+*/
