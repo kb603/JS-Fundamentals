@@ -260,3 +260,5 @@ console.log(movementDescriptions);
 
 const account = accounts.find((acc) => acc.owner === "Jessica Davis");
 console.log(account);
+
+const accountss = 5;
